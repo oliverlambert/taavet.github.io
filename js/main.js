@@ -52,100 +52,100 @@
 				// Initialize the Guitar.
 				new Guitar(guitarEl);
 				// Initialize the Kalimba.
-				new Kalimba(kalimbaEl);
+				// new Kalimba(kalimbaEl);
 				// Initialize the Chimes.
 				new Chimes(chimesEl);
 				// Initialize the Timpani.
 				new Timpani(timpaniEl);
 				// Initialize the Harp.
-				new Harp(harpEl);
+				// new Harp(harpEl);
 				// Initialize the Xylophone.
 				new Xylophone(xylophoneEl);
 				// Initialize the Sax.
-				new Instrument(saxEl, {
-					notes: [32,33,35,36,39,40],
-					midiCode: 65,
-					noteOffDelay: 1500,
-					onPlay: function(instance) {
-						anime.remove(instance.el);
-						anime({
-							targets: instance.el,
-							duration: 500,
-							easing: 'easeOutCirc',
-							translateY: 5,
-							rotateZ: 10,
-							complete: function() {
-								anime({
-									targets: instance.el,
-									duration: 500,
-									delay: 1000,
-									easing: 'easeOutExpo',
-									translateY: [5,0],
-									rotateZ: [10,0],
-								});	
-							}
-						});
-						setTimeout(function() {instance.isPlaying = false;}, 1500);
-					}
-				});
-				// Initialize the Tuba.
-				new Instrument(tubaEl, {
-					notes: [13,15,17,18,20,22,24,25,24,22,20,18,17,15],
-					midiCode: 58,
-					noteOffDelay: 500,
-					onPlay: function(instance) {
-						anime.remove(instance.el);
-						anime({
-							targets: instance.el,
-							duration: 500,
-							easing: 'easeOutCirc',
-							translateY: 5,
-							rotateZ: 5,
-							complete: function() {
-								anime({
-									targets: instance.el,
-									duration: 500,
-									delay: 200,
-									easing: 'easeOutExpo',
-									translateY: [5,0],
-									rotateZ: [5,0],
-								});	
-							}
-						});
-						setTimeout(function() {instance.isPlaying = false;}, 500);
-					}
-				});
-				// Initialize the PanFlute.
-				new Instrument(panfluteEl, {
-					notes: [65,69,64,67,64,67],
-					midiCode: 75,
-					noteOffDelay: 1500,
-					onPlay: function(instance) {
-						anime.remove(instance.el);
-						anime({
-							targets: instance.el,
-							duration: 500,
-							easing: 'easeOutCirc',
-							translateY: -5,
-							rotateZ: -10,
-							complete: function() {
-								anime({
-									targets: instance.el,
-									duration: 500,
-									delay: 1000,
-									easing: 'easeOutExpo',
-									translateY: [-5,0],
-									rotateZ: [-10,0],
-								});	
-							}
-						});
-						setTimeout(function() {instance.isPlaying = false;}, 1500);
-					}
-				});
+				// new Instrument(saxEl, {
+				// 	notes: [32,33,35,36,39,40],
+				// 	midiCode: 65,
+				// 	noteOffDelay: 1500,
+				// 	onPlay: function(instance) {
+				// 		anime.remove(instance.el);
+				// 		anime({
+				// 			targets: instance.el,
+				// 			duration: 500,
+				// 			easing: 'easeOutCirc',
+				// 			translateY: 5,
+				// 			rotateZ: 10,
+				// 			complete: function() {
+				// 				anime({
+				// 					targets: instance.el,
+				// 					duration: 500,
+				// 					delay: 1000,
+				// 					easing: 'easeOutExpo',
+				// 					translateY: [5,0],
+				// 					rotateZ: [10,0],
+				// 				});	
+				// 			}
+				// 		});
+				// 		setTimeout(function() {instance.isPlaying = false;}, 1500);
+				// 	}
+				// });
+				// // Initialize the Tuba.
+				// new Instrument(tubaEl, {
+				// 	notes: [13,15,17,18,20,22,24,25,24,22,20,18,17,15],
+				// 	midiCode: 58,
+				// 	noteOffDelay: 500,
+				// 	onPlay: function(instance) {
+				// 		anime.remove(instance.el);
+				// 		anime({
+				// 			targets: instance.el,
+				// 			duration: 500,
+				// 			easing: 'easeOutCirc',
+				// 			translateY: 5,
+				// 			rotateZ: 5,
+				// 			complete: function() {
+				// 				anime({
+				// 					targets: instance.el,
+				// 					duration: 500,
+				// 					delay: 200,
+				// 					easing: 'easeOutExpo',
+				// 					translateY: [5,0],
+				// 					rotateZ: [5,0],
+				// 				});	
+				// 			}
+				// 		});
+				// 		setTimeout(function() {instance.isPlaying = false;}, 500);
+				// 	}
+				// });
+				// // Initialize the PanFlute.
+				// new Instrument(panfluteEl, {
+				// 	notes: [65,69,64,67,64,67],
+				// 	midiCode: 75,
+				// 	noteOffDelay: 1500,
+				// 	onPlay: function(instance) {
+				// 		anime.remove(instance.el);
+				// 		anime({
+				// 			targets: instance.el,
+				// 			duration: 500,
+				// 			easing: 'easeOutCirc',
+				// 			translateY: -5,
+				// 			rotateZ: -10,
+				// 			complete: function() {
+				// 				anime({
+				// 					targets: instance.el,
+				// 					duration: 500,
+				// 					delay: 1000,
+				// 					easing: 'easeOutExpo',
+				// 					translateY: [-5,0],
+				// 					rotateZ: [-10,0],
+				// 				});	
+				// 			}
+				// 		});
+				// 		setTimeout(function() {instance.isPlaying = false;}, 1500);
+				// 	}
+				// });
 				// Initialize the microphone effect.
-				new Mic(micAreaEl);
+				// new Mic(micAreaEl);
 				// Initialize the violin effect.
-				new Violin(violinAreaEl);
+				// new Violin(violinAreaEl);
 				// Initialize the tiny Chimes.
 				tinyChimes = new Chimes(tinyChimesEl, { triggeredOnHover: true });
 				initEvents();
