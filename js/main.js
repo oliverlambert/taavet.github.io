@@ -24,7 +24,7 @@
 		// panfluteEl = document.querySelector('.content--instrument .tiny-instrument--flute'),
 		// micAreaEl = document.querySelector('.content--bg-mic'),
 		// violinAreaEl = document.querySelector('.content--bg-violin'),
-		tinyChimesEl = document.querySelector('.chime--tiny'), 
+		// tinyChimesEl = document.querySelector('.chime--tiny'), 
 		tinyChimes,
 		isMobile = mobilecheck();
 
@@ -147,7 +147,7 @@
 				// Initialize the violin effect.
 				// new Violin(violinAreaEl);
 				// Initialize the tiny Chimes.
-				tinyChimes = new Chimes(tinyChimesEl, { triggeredOnHover: true });
+				// tinyChimes = new Chimes(tinyChimesEl, { triggeredOnHover: true });
 				initEvents();
 			}
 		});
